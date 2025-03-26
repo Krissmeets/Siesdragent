@@ -3,7 +3,7 @@ public with sharing class S4S_SDR_Lead_Data_Binder {
 //@ Description : SDR Agent get detail from the lead and inject this into the outreach prompt 
 //@ Author      : Christoffel Smeets (ksmeets@salesforce.com)          
 //@ Date        : 21 March 2025        
-//@ Test Class  : S4S_SDR_Lead_Data_Binder
+//@ Test Class  : S4S_SDR_Lead_Data_BinderTest
 //**************************************************************************************************************************************
     
     private static string letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -49,25 +49,25 @@ public with sharing class S4S_SDR_Lead_Data_Binder {
         //### Concatenate the whereclauses for the query
         String[] whereClauses = new list<string>();
         for (string f : leadReference.keyset()) {
-            whereClauses.add(string.format('(Name = \'Lead.{0}\' AND Key__c=:{1})', new List<object>{leadReference.get(f).name, f}));
+            whereClauses.add(string.format('(Name = \'Lead\' AND Field__c=\'\'{0}\'\' AND Key__c=:{1})', new List<object>{leadReference.get(f).name, f}));
         }
 
         //### Build the query
-        String query = 'SELECT Name,Value__c FROM S4S_Prompt_Binding__c WHERE ';
+        String query = 'SELECT Name,Field__c,Value__c FROM S4S_Prompt_Binding__c WHERE ';
         query += string.join(whereClauses, ' OR ');
         system.debug(query);
 
         //### Execute the query and create a map: name=>object
         Map<string, S4S_Prompt_Binding__c> promptMap = new Map<string, S4S_Prompt_Binding__c>();
         for (S4S_Prompt_Binding__c f : (List<S4S_Prompt_Binding__c>) Database.queryWithBinds(query,bindMap, AccessLevel.USER_MODE)) {
-            promptMap.put(f.Name, f);
-            system.debug(f);
+            promptMap.put(f.Name+f.Field__c, f);
+            system.debug('Binding:' + f.Name+f.Field__c);
         }
 
         //### Build the output prompt
         output.Prompt = '';
         for (string f : leadReference.keySet()) {
-            string key = 'Lead.' + leadReference.get(f).name;
+            string key = 'Lead' + leadReference.get(f).name;
             if (promptMap.containsKey(key)) {
                 output.Prompt += leadReference.get(f).description + '\n';
                 output.Prompt += promptMap.get(key).Value__c + '\n' + '\n';

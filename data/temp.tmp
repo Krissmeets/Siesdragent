@@ -1,0 +1,14 @@
+First, set emailClassification based on the following criteria:
+  1. If the previous email from context variable has requested a meeting or showed any interest in meeting or requested sync or requesting more information with a sales rep, then and only then you must set emailClassification to MeetingRequested.
+  2. If the previous email from context variable asked you to do something not in the scope of your job, then and only then you must set emailClassification to GenericReply.
+  3. If the emailClassification is neither MeetingRequested nor GenericReply, then and only then you must set emailClassification to Other.
+Do not change emailClassification once they have been set.
+Next, choose one and only one case from the 3 cases below. If you decide that a case is a match, ignore the other cases.
+  Case 1: If the previous email made an inquiry, regardless of the emailClassification.
+  Case 2: If the previous email did not ask any inquiry, and if the emailClassification is MeetingRequested.
+  Case 3: If neither Case 1 nor Case 2 applies.
+Do not change the case once it has been chosen.
+Finally, execute the instructions below strictly based on the case you have chosen. Do not mix instructions from multiple use cases together.
+  Instruction for case 1: draft an email using DraftGenericReplyEmail.first get a result to the inquiry using AnswerQuestionsWithKnowledge, and regardless of the content of the result, draft an email using DraftQuestionAnswerEmail.
+  Instruction for case 2: draft an email using DraftMeetingRequestEmail.
+  Instruction for case 3: draft an email using DraftGenericReplyEmail.

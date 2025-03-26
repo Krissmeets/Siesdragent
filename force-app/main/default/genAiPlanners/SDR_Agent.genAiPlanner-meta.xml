@@ -13,13 +13,13 @@
             <genAiPluginInstructions>
                 <description>If lead or prospect has requested to stop receiving messages, or to opt out, you must perform the Opt Out Lead action</description>
                 <developerName>instruction_ifleadorpr0</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_ifleadorpr0</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
                 <description>You must always use context variables for the input of this action</description>
                 <developerName>instruction_youmustalw1</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_youmustalw1</masterLabel>
             </genAiPluginInstructions>
             <language>en_US</language>
@@ -34,9 +34,6 @@
         <genAiCustomizedPlugin>
             <description>Draft and schedule replies to prospects that have responded to an initial outreach. Must not use this topic if the email requests to opt out of receiving messages.</description>
             <genAiFunctions>
-                <functionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</functionName>
-            </genAiFunctions>
-            <genAiFunctions>
                 <functionName>sales_sdr_agent__DraftGenericReplyEmail</functionName>
             </genAiFunctions>
             <genAiFunctions>
@@ -46,48 +43,48 @@
                 <functionName>sales_sdr_agent__ScheduleEmail</functionName>
             </genAiFunctions>
             <genAiFunctions>
-                <functionName>sales_sdr_agent__DraftQuestionAnswerEmail</functionName>
+                <functionName>S4S_SDR_Lead_Qualfied</functionName>
             </genAiFunctions>
             <genAiPluginInstructions>
                 <description>Always draft an email before scheduling an email. And you must always use the generated email for the schedule email input.</description>
                 <developerName>instruction_alwaysdraf0</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_alwaysdraf0</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
                 <description>Only perform the email drafting action once.</description>
                 <developerName>instruction_onlyperfor1</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_onlyperfor1</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
                 <description>You must always use context variables for the input of this action</description>
                 <developerName>instruction_youmustalw2</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_youmustalw2</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
                 <description>You must schedule the email after drafting an email.</description>
                 <developerName>instruction_youmustsch3</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_youmustsch3</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
                 <description>If Lead_Owner_has_Inbox is set to FALSE or false, then you must add &quot;Lead Owner has Inbox Disabled&quot; to additional instruction for prompt template</description>
                 <developerName>instruction_ifleadowne4</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_ifleadowne4</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
                 <description>If Lead_Owner_has_Inbox is set to TRUE or true, then you must add &quot;Lead Owner has Inbox Enabled&quot; to additional instruction for prompt template</description>
                 <developerName>instruction_ifleadowne5</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_ifleadowne5</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
                 <description>Only execute one function step at a time. This is VERY IMPORTANT. After each function, make sure to observe all the information you have before deciding on what the next step is.</description>
                 <developerName>instruction_onlyexecut6</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_onlyexecut6</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
@@ -102,11 +99,11 @@ Next, choose one and only one case from the 3 cases below. If you decide that a 
   Case 3: If neither Case 1 nor Case 2 applies.
 Do not change the case once it has been chosen.
 Finally, execute the instructions below strictly based on the case you have chosen. Do not mix instructions from multiple use cases together.
-  Instruction for case 1: first get a result to the inquiry using AnswerQuestionsWithKnowledge, and regardless of the content of the result, draft an email using DraftQuestionAnswerEmail.
-  Instruction for case 2: draft an email using DraftMeetingRequestEmail.
+  Instruction for case 1: draft an email using DraftGenericReplyEmail.
+  Instruction for case 2: draft an email using DraftMeetingRequestEmail. And you MUST execute S4S_SDR_Lead_Qualfied to update the lead status to &apos;SDR Qualified&apos;.
   Instruction for case 3: draft an email using DraftGenericReplyEmail.</description>
                 <developerName>instruction_firstsetem7</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_firstsetem7</masterLabel>
             </genAiPluginInstructions>
             <language>en_US</language>
