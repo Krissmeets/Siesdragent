@@ -49,7 +49,7 @@ private class S4S_SDR_Lead_QualifiedTest {
         requests.add(request);
 
             List<S4S_SDR_Lead_Qualfied.Response> responses = S4S_SDR_Lead_Qualfied.sdrLeadQualfied(requests);
-            system.assert(responses[0].success);  
+            Assert.isTrue(responses[0].success,'Updated Lead Status');
         }
         Test.stopTest();     
 

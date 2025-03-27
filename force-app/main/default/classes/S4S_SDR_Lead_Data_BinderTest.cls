@@ -64,8 +64,9 @@ private class S4S_SDR_Lead_Data_BinderTest {
         //### Run the test
             List<S4S_SDR_Lead_Data_Binder.Response> responses = S4S_SDR_Lead_Data_Binder.getPrompt(requests);
             system.debug(responses[0].prompt);          
-            system.assert(responses[0].prompt.startswith('TEST HEADER:'));  
+            Assert.isTrue(responses[0].prompt.startswith('TEST HEADER:'), 'Test header injected');
         }
+        
         Test.stopTest();
         
         //### Check the results
