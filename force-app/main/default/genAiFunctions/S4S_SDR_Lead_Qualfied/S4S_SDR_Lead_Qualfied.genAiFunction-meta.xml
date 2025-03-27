@@ -4,6 +4,5 @@
     <invocationTarget>S4S_SDR_Lead_Qualfied</invocationTarget>
     <invocationTargetType>apex</invocationTargetType>
     <isConfirmationRequired>false</isConfirmationRequired>
-    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
     <masterLabel>S4S_SDR_Lead_Qualfied</masterLabel>
 </GenAiFunction>
