@@ -162012,6 +162012,29 @@ Owner:User.Profile.Name &lt;&gt; &apos;S4S Integration User&apos;
         <fullName>S4S Lead Assignment Rules 2024-12</fullName>
         <active>true</active>
         <ruleEntry>
+            <assignedTo>sdragent2@siemens.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Status</field>
+                <operation>equals</operation>
+                <value>SDR Unqualified</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CountryCode</field>
+                <operation>notEqual</operation>
+                <value>BY,CU,IR,KP,RU,SY</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.S4SMarketing_Qualified__c</field>
+                <operation>notEqual</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Email</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
             <criteriaItems>
                 <field>Lead.LastModifiedById</field>
                 <operation>equals</operation>

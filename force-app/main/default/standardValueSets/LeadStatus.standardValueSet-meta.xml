@@ -2,6 +2,18 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
+        <fullName>SDR Unqualified</fullName>
+        <default>false</default>
+        <label>SDR Unqualified</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>SDR Qualified</fullName>
+        <default>false</default>
+        <label>SDR Qualified</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
         <fullName>Open</fullName>
         <default>true</default>
         <label>Open</label>
@@ -65,18 +77,6 @@
         <fullName>Deal Registration Rejected</fullName>
         <default>false</default>
         <label>Partner Project Registration Rejected</label>
-        <converted>false</converted>
-    </standardValue>
-    <standardValue>
-        <fullName>SDR Unqualified</fullName>
-        <default>false</default>
-        <label>SDR Unqualified</label>
-        <converted>false</converted>
-    </standardValue>
-    <standardValue>
-        <fullName>SDR Qualified</fullName>
-        <default>false</default>
-        <label>SDR Qualified</label>
         <converted>false</converted>
     </standardValue>
 </StandardValueSet>
