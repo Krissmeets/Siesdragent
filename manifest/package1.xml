@@ -2,10 +2,16 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
    <types>
    <members>S4S_Prompt_Binding__c</members>
-           <members>Lead</members>
-
+      <members>Lead</members>
       <name>CustomObject</name>
    </types>
+   <types>
+   <members>S4S_Prompt_Binding__c</members>
+      <members>Lead-Lead Layout</members>
+      <members>Lead-SFS Lead Layout</members>
+      <name>Layout</name>
+   </types>
+   
    <types>
       <members>S4S_SDR_Lead_QualifiedTest</members>
       <members>S4S_SDR_Lead_Qualfied</members>
