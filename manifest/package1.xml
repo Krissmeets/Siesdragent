@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+   <types>
+   <members>S4S_Prompt_Binding__c</members>
+           <members>Lead</members>
+
+      <name>CustomObject</name>
+   </types>
+   <types>
+      <members>S4S_SDR_Lead_QualifiedTest</members>
+      <members>S4S_SDR_Lead_Qualfied</members>
+      <members>S4S_SDR_Lead_Data_BinderTest</members>
+      <members>S4S_SDR_Lead_Data_Binder</members>
+      <name>ApexClass</name>
+   </types>
+      <types>
+      <members>Lead.Status</members>
+      <name>CustomField</name>
+    </types>
+   <types>
+      <members>LeadStatus</members>
+      <name>StandardValueSet</name>
+    </types>
+       <types>
+        <members>S4S_SDR_Lead_Data_Binder</members>
+        <name>PermissionSet</name>
+    </types>
+       <types>
+        <members>S4S_Prompt_Binding__c</members>
+        <name>CustomTab</name>
+    </types>
+    
+   <version>62.0</version>
+</Package>
