@@ -17,17 +17,21 @@ public with sharing class S4S_SDR_Lead_Data_Binder {
         List<Response> responses = new List<Response>();
         Response output = new Response();
 
+        system.debug('LEAD:' + req.Recipient.Id);
+        system.debug(letters);
+
         //### Create Map with Lead Fields
         integer i = 0;
         Set<String> queryFields = new Set<String>();
         Map<string,Field> leadReference = new Map<string,Field>(); 
         for (S4S_Prompt_Binding__c f : [SELECT Field__c, Value__c from S4S_Prompt_Binding__c 
                                         WHERE Name = 'Lead' AND Key__c = '###HEADER###']) {
-            leadReference.put(letters.substring(i,1), new Field(f.Field__c, f.Value__c));
+            leadReference.put(letters.mid(i,1), new Field(f.Field__c, f.Value__c));
             queryFields.add(f.Field__c);
             i++;
+            system.debug(letters.mid(i,1) + ':' + f.Field__c);
         }
-      
+    
         //### Query the Lead object again to make sure all fields are available
         string queryLead = string.format('SELECT {0} FROM LEAD WHERE Id =\'\'{1}\'\' LIMIT 1',new list<object>{string.join(queryFields,','), req.Recipient.Id});
         system.debug(queryLead);
