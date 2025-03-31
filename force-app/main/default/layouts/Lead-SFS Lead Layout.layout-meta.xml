@@ -422,7 +422,7 @@
         <fields>CAMPAIGN.NAME</fields>
         <fields>CAMPAIGN.STATUS</fields>
         <fields>CAMPAIGN.CAMPAIGN_TYPE</fields>
-        <fields>S4SBusiness_Unit__c</fields>
+        <fields>CampaignMember.S4SBusiness_Unit__c</fields>
         <fields>S4SCorp_Lead_Country__c</fields>
         <fields>CORE.USERS.ALIAS</fields>
         <relatedList>RelatedCampaignList</relatedList>

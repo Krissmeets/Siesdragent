@@ -20,6 +20,10 @@
       <name>GenAiFunction</name>
    </types>
    <types>
+      <members>SDR_Agent</members>      
+      <name>Bot</name>
+   </types>
+   <types>
       <members>DraftNudgeEmail_Override</members>
       <members>GenerateGenericFallbackReply_Override</members>
       <members>GenerateInitialIntroEmail_Override</members>
@@ -27,5 +31,5 @@
       <members>RespondToProspectInterest_Override</members>      
       <name>GenAiPromptTemplate</name>
    </types>
-   <version>62.0</version>
+   <version>63.0</version>
 </Package>
