@@ -79,4 +79,10 @@
         <label>Partner Project Registration Rejected</label>
         <converted>false</converted>
     </standardValue>
+    <standardValue>
+        <fullName>SDR Rejected</fullName>
+        <default>false</default>
+        <label>SDR Rejected</label>
+        <converted>false</converted>
+    </standardValue>
 </StandardValueSet>
