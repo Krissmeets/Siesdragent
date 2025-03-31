@@ -182,6 +182,6 @@ Finally, execute the instructions below strictly based on the case you have chos
         </genAiCustomizedPlugin>
         <genAiPluginName>sales_sdr_agent__SendOutreach</genAiPluginName>
     </genAiPlugins>
-    <masterLabel>SDR Agent</masterLabel>
+    <masterLabel>Agentforce Sales Development Rep</masterLabel>
     <plannerType>AiCopilot__ReAct</plannerType>
 </GenAiPlanner>

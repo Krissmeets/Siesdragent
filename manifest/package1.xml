@@ -5,11 +5,6 @@
       <members>Lead</members>
       <name>CustomObject</name>
    </types>
-   <types>
-      <members>Lead-Lead Layout</members>
-      <members>Lead-SFS Lead Layout</members>
-      <name>Layout</name>
-   </types>
    
    <types>
       <members>S4S_SDR_Lead_QualifiedTest</members>

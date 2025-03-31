@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>v1</fullName>
+    <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>Hi! I&apos;m your helpful bot.</message>
+                <messageIdentifier>f7d9ef3e-6432-4c12-849c-9b2e68103f09</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>0f9d8274-a5eb-4a16-86fc-01a66f8127ac</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>1d00b198-799d-4b65-ba83-7981212958ff</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Welcome</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Hi! I&apos;m your helpful bot.</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>Unfortunately, a system error occurred. Let us start again.</message>
+                <messageIdentifier>ef59b276-4b48-4f21-ab95-c6dd55290e81</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>7ca58e39-069a-47fb-8ee0-6832f3cef708</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>bf72d83d-01c3-4b0f-8407-43411779e5a4</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Error_Handling</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Unfortunately, a system error occurred. Let us start again.</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <citationsEnabled>false</citationsEnabled>
+    <company>Our technology empowers customers to transform the industries that form the backbone of economies: industry, transportation, buildings and grids. Our solutions accelerate the digital transformation of multiple industries, to scale sustainability impact.</company>
+    <conversationDefinitionPlanners>
+        <genAiPlannerName>Agentforce_Sales_Development_Rep</genAiPlannerName>
+    </conversationDefinitionPlanners>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>VerifiedCustomerId</developerName>
+        <label>VerifiedCustomerId</label>
+        <visibility>Internal</visibility>
+    </conversationVariables>
+    <entryDialog>Welcome</entryDialog>
+    <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
+    <intentV3Enabled>false</intentV3Enabled>
+    <knowledgeActionEnabled>false</knowledgeActionEnabled>
+    <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
+    <role>You are a Digital Agent SDR for Siemens, reaching out to Prospects with a compelling message that is grounded in information that we have on the prospect. The purpose of the conversation is to schedule a meeting with one of our Sales Representatives.</role>
+    <smallTalkEnabled>false</smallTalkEnabled>
+    <toneType>Casual</toneType>
+</BotVersion>
