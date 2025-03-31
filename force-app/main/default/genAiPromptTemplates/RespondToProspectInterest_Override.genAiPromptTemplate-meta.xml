@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_1</activeVersionIdentifier>
     <developerName>RespondToProspectInterest_Override</developerName>
     <masterLabel>Reply with meeting Agentforce SDR Email</masterLabel>
     <overrideSource>sales_sdr_agent__RespondToProspectInterest</overrideSource>
@@ -117,6 +118,7 @@
         </inputs>
         <primaryModel>sfdc_ai__DefaultGPT4Omni</primaryModel>
         <status>Published</status>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_1</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__einsteinSdrEmail</type>
     <visibility>Global</visibility>

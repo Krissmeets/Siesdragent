@@ -43,7 +43,9 @@
             <messageType>Facebook</messageType>
         </contextVariableMappings>
         <dataType>Id</dataType>
+        <description>This variable may also be referred to as MessagingEndUser ContactId</description>
         <developerName>ContactId</developerName>
+        <includeInPrompt>false</includeInPrompt>
         <label>Contact Id</label>
     </contextVariables>
     <contextVariables>
@@ -83,7 +85,9 @@
             <messageType>Text</messageType>
         </contextVariableMappings>
         <dataType>Id</dataType>
+        <description>This variable may also be referred to as MessagingEndUser Id</description>
         <developerName>EndUserId</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>End User Id</label>
     </contextVariables>
     <contextVariables>
@@ -123,7 +127,9 @@
             <messageType>Facebook</messageType>
         </contextVariableMappings>
         <dataType>Text</dataType>
+        <description>This variable may also be referred to as MessagingSession EndUserLanguage</description>
         <developerName>EndUserLanguage</developerName>
+        <includeInPrompt>false</includeInPrompt>
         <label>End User Language</label>
     </contextVariables>
     <contextVariables>
@@ -163,7 +169,9 @@
             <messageType>Facebook</messageType>
         </contextVariableMappings>
         <dataType>Id</dataType>
+        <description>This variable may also be referred to as MessagingSession Id</description>
         <developerName>RoutableId</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>Routable Id</label>
     </contextVariables>
     <description>Prospect and generate pipeline 24/7 with an autonomous AI agent. Agentforce Sales Development Representative (SDR) intelligently engages leads with personalized content, answers common questions, and schedules meetings.</description>

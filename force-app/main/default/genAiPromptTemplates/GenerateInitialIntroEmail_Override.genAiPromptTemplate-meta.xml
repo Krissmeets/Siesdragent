@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_16</activeVersionIdentifier>
     <developerName>GenerateInitialIntroEmail_Override</developerName>
     <masterLabel>Draft Agentforce SDR Email</masterLabel>
     <overrideSource>sales_sdr_agent__GenerateInitialIntroEmail</overrideSource>
@@ -221,6 +222,7 @@ Now generate the warm introduction email to your prospect that establishes rappo
             </parameters>
             <referenceName>Apex:S4S_SDR_Lead_Data_Binder</referenceName>
         </templateDataProviders>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_4</versionIdentifier>
     </templateVersions>
     <templateVersions>
         <content> You are the Digital Agent. Your name, and other information are provided in the AGENT_INFORMATION. 
@@ -440,6 +442,7 @@ Now generate the warm introduction email to your prospect that establishes rappo
             </parameters>
             <referenceName>Apex:S4S_SDR_Lead_Data_Binder</referenceName>
         </templateDataProviders>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_8</versionIdentifier>
     </templateVersions>
     <templateVersions>
         <content> You are the Digital Agent. Your name, and other information are provided in the AGENT_INFORMATION. 
@@ -659,6 +662,7 @@ Now generate the warm introduction email to your prospect that establishes rappo
             </parameters>
             <referenceName>Apex:S4S_SDR_Lead_Data_Binder</referenceName>
         </templateDataProviders>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_9</versionIdentifier>
     </templateVersions>
     <templateVersions>
         <content> You are the Digital Agent. Your name, and other information are provided in the AGENT_INFORMATION. 
@@ -879,6 +883,7 @@ IMPORTANT: Start with a formal greeting, e.g. &quot;Dear {!$Input:Recipient.Firs
             </parameters>
             <referenceName>Apex:S4S_SDR_Lead_Data_Binder</referenceName>
         </templateDataProviders>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_10</versionIdentifier>
     </templateVersions>
     <templateVersions>
         <content> You are the Digital Agent. Your name, and other information are provided in the AGENT_INFORMATION. 
@@ -1098,6 +1103,7 @@ IMPORTANT: Start with a formal greeting, e.g. &quot;Dear {!$Input:Recipient.Firs
             </parameters>
             <referenceName>Apex:S4S_SDR_Lead_Data_Binder</referenceName>
         </templateDataProviders>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_11</versionIdentifier>
     </templateVersions>
     <templateVersions>
         <content> You are the Digital Agent. Your name, and other information are provided in the AGENT_INFORMATION. 
@@ -1320,6 +1326,7 @@ Now generate the warm introduction email to your prospect that establishes rappo
             </parameters>
             <referenceName>Apex:S4S_SDR_Lead_Data_Binder</referenceName>
         </templateDataProviders>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_12</versionIdentifier>
     </templateVersions>
     <templateVersions>
         <content>You are the Digital Agent. Your name, and other information are provided in the AGENT_INFORMATION. 
@@ -1539,6 +1546,7 @@ Now generate the warm introduction email to your prospect that establishes rappo
             </parameters>
             <referenceName>Apex:S4S_SDR_Lead_Data_Binder</referenceName>
         </templateDataProviders>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_13</versionIdentifier>
     </templateVersions>
     <templateVersions>
         <content> You are the Digital Agent. Your name, and other information are provided in the AGENT_INFORMATION. 
@@ -1759,6 +1767,7 @@ Now generate the warm introduction email to your prospect that establishes rappo
             </parameters>
             <referenceName>Apex:S4S_SDR_Lead_Data_Binder</referenceName>
         </templateDataProviders>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_14</versionIdentifier>
     </templateVersions>
     <templateVersions>
         <content> You are the Digital Agent. Your name, and other information are provided in the AGENT_INFORMATION. 
@@ -1980,6 +1989,7 @@ Now generate the warm introduction email to your prospect that establishes rappo
             </parameters>
             <referenceName>Apex:S4S_SDR_Lead_Data_Binder</referenceName>
         </templateDataProviders>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_15</versionIdentifier>
     </templateVersions>
     <templateVersions>
         <content> You are the Digital Agent. Your name, and other information are provided in the AGENT_INFORMATION. 
@@ -2199,6 +2209,7 @@ Now generate the warm introduction email to your prospect that establishes rappo
             </parameters>
             <referenceName>Apex:S4S_SDR_Lead_Data_Binder</referenceName>
         </templateDataProviders>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_16</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__einsteinSdrEmail</type>
     <visibility>Global</visibility>

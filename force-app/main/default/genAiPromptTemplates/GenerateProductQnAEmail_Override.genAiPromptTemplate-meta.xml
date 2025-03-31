@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_1</activeVersionIdentifier>
     <developerName>GenerateProductQnAEmail_Override</developerName>
     <masterLabel>Reply with Product QnA Agentforce SDR Email</masterLabel>
     <overrideSource>sales_sdr_agent__GenerateProductQnAEmail</overrideSource>
@@ -192,6 +193,7 @@
         </inputs>
         <primaryModel>sfdc_ai__DefaultGPT4Omni</primaryModel>
         <status>Published</status>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_1</versionIdentifier>
     </templateVersions>
     <templateVersions>
         <content>You are the Digital Agent. Your name, company name, and other information are provided in the AGENT_INFORMATION. And your Seller&apos;s information is provided in the SELLER_INFORMATION section.
@@ -392,6 +394,7 @@ Your output must be in the {!$User.LanguageLocaleKey} language. You are strictly
         </inputs>
         <primaryModel>sfdc_ai__DefaultOpenAIGPT4Turbo</primaryModel>
         <status>Draft</status>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_2</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__einsteinSdrEmail</type>
     <visibility>Global</visibility>

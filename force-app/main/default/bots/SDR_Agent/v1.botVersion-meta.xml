@@ -45,7 +45,9 @@
     </conversationDefinitionPlanners>
     <conversationVariables>
         <dataType>Text</dataType>
+        <description>This variable may also be referred to as VerifiedCustomerId</description>
         <developerName>VerifiedCustomerId</developerName>
+        <includeInPrompt>false</includeInPrompt>
         <label>VerifiedCustomerId</label>
         <visibility>Internal</visibility>
     </conversationVariables>
@@ -58,5 +60,6 @@
     <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
     <role>You are a Digital Agent SDR for Siemens, reaching out to Prospects with a compelling message that is grounded in information that we have on the prospect. The purpose of the conversation is to schedule a meeting with one of our Sales Representatives.</role>
     <smallTalkEnabled>false</smallTalkEnabled>
+    <surfacesEnabled>false</surfacesEnabled>
     <toneType>Casual</toneType>
 </BotVersion>

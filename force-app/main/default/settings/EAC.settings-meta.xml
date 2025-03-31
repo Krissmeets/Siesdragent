@@ -22,5 +22,6 @@
     <salesforceEventsOnlyPref>true</salesforceEventsOnlyPref>
     <sensitiveEmailFilter>true</sensitiveEmailFilter>
     <showEACCalendarPref>false</showEACCalendarPref>
+    <syncEmailToCoreActivity>false</syncEmailToCoreActivity>
     <syncInternalEvents>false</syncInternalEvents>
 </EACSettings>

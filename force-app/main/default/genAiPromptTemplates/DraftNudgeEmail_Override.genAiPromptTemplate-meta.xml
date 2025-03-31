@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_15</activeVersionIdentifier>
     <developerName>DraftNudgeEmail_Override</developerName>
     <masterLabel>Follow up Agentforce SDR Email</masterLabel>
     <overrideSource>sales_sdr_agent__DraftNudgeEmail</overrideSource>
@@ -179,6 +180,7 @@ You are strictly prohibited from including a sign-off section, you must leave it
             </parameters>
             <referenceName>Apex:S4S_SDR_Lead_Data_Binder</referenceName>
         </templateDataProviders>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_12</versionIdentifier>
     </templateVersions>
     <templateVersions>
         <content>You are the Digital Agent. Your name, company name, and other information are provided in the AGENT_INFORMATION. 
@@ -355,6 +357,7 @@ You are strictly prohibited from including a sign-off section, you must leave it
             </parameters>
             <referenceName>Apex:S4S_SDR_Lead_Data_Binder</referenceName>
         </templateDataProviders>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_13</versionIdentifier>
     </templateVersions>
     <templateVersions>
         <content> You are the Digital Agent. Your name, company name, and other information are provided in the AGENT_INFORMATION. 
@@ -535,6 +538,7 @@ You are strictly prohibited from including a sign-off section, you must leave it
             </parameters>
             <referenceName>Apex:S4S_SDR_Lead_Data_Binder</referenceName>
         </templateDataProviders>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_14</versionIdentifier>
     </templateVersions>
     <templateVersions>
         <content> You are the Digital Agent. Your name, company name, and other information are provided in the AGENT_INFORMATION. 
@@ -715,6 +719,7 @@ You are strictly prohibited from including a sign-off section, you must leave it
             </parameters>
             <referenceName>Apex:S4S_SDR_Lead_Data_Binder</referenceName>
         </templateDataProviders>
+        <versionIdentifier>rjInC3KSkVM7KrVc6NLFpLifz93Qt69XhmpCoR/8kk0=_15</versionIdentifier>
     </templateVersions>
     <type>einstein_gpt__einsteinSdrEmail</type>
     <visibility>Global</visibility>
