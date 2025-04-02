@@ -8,6 +8,9 @@ Includes:
 - Agent Modifications (Scope, Instructions, etc.)
 - Custom Agent Action (Connect to existing Lead Process)
 
+Development branch
+https://github.com/Krissmeets/Siesdragent/tree/development
+
 SDR Implementation guide:
 https://docs.google.com/presentation/d/1xqdXrVL2ojqyFS28gENEoftzPC3nwTC9dlsP67pxEpQ/edit#slide=id.g32b936b6bda_0_2697
 
