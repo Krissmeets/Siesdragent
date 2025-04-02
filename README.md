@@ -16,4 +16,6 @@ https://docs.google.com/presentation/d/1Mhj9xm0o0clnvNkt5JC41pTOO6w_BB5FnhnnPdla
 
 Salesforce Metadata:
 force-app/main/default/
-manifest/package.xml
+manifest/package1.xml
+manifest/package2.xml
+data/bindings.csv
