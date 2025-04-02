@@ -162015,9 +162015,9 @@ Owner:User.Profile.Name &lt;&gt; &apos;S4S Integration User&apos;
             <assignedTo>sdragent2@siemens.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
-                <field>Lead.Status</field>
+                <field>Lead.S4SSDR_Processed__c</field>
                 <operation>equals</operation>
-                <value>SDR Unqualified</value>
+                <value>false</value>
             </criteriaItems>
             <criteriaItems>
                 <field>Lead.CountryCode</field>

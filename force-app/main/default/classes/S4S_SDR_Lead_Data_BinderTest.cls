@@ -23,7 +23,7 @@ private class S4S_SDR_Lead_Data_BinderTest {
 
         User u = S4S_SDR_Lead_Data_BinderTest.createUser();
         
-        List<PermissionSet> lps = [SELECT Id FROM PermissionSet WHERE Name IN ('S4S_SDR_Lead_Data_Binder','EinsteinSdrAgent', 'S4S_SDR_Agent')];
+        List<PermissionSet> lps = [SELECT Id FROM PermissionSet WHERE Name IN ('S4S_SDR_Permission','EinsteinSdrAgent', 'S4S_SDR_Agent')];
         List<PermissionSetAssignment> lpsa = new List<PermissionSetAssignment>();
         for (PermissionSet ps : lps) {
             PermissionSetAssignment psa = new PermissionSetAssignment();

@@ -6,13 +6,13 @@
         <botSteps>
             <botMessages>
                 <message>Hi! I&apos;m your helpful bot.</message>
-                <messageIdentifier>f7d9ef3e-6432-4c12-849c-9b2e68103f09</messageIdentifier>
+                <messageIdentifier>fbab93b7-6ce9-4de0-9651-6102e5044e50</messageIdentifier>
             </botMessages>
-            <stepIdentifier>0f9d8274-a5eb-4a16-86fc-01a66f8127ac</stepIdentifier>
+            <stepIdentifier>767ff552-eafe-49b9-88fa-821892c54c76</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>1d00b198-799d-4b65-ba83-7981212958ff</stepIdentifier>
+            <stepIdentifier>7e88cda5-e08f-4073-8c34-224913a1aa88</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Welcome</developerName>
@@ -24,13 +24,13 @@
         <botSteps>
             <botMessages>
                 <message>Unfortunately, a system error occurred. Let us start again.</message>
-                <messageIdentifier>ef59b276-4b48-4f21-ab95-c6dd55290e81</messageIdentifier>
+                <messageIdentifier>81463497-aa98-4597-93f8-bf1a30c49456</messageIdentifier>
             </botMessages>
-            <stepIdentifier>7ca58e39-069a-47fb-8ee0-6832f3cef708</stepIdentifier>
+            <stepIdentifier>63ce529d-47fa-42f1-8f7c-088f7140b754</stepIdentifier>
             <type>Message</type>
         </botSteps>
         <botSteps>
-            <stepIdentifier>bf72d83d-01c3-4b0f-8407-43411779e5a4</stepIdentifier>
+            <stepIdentifier>ee0a36b2-8e49-4369-b61e-9a3fd98c5b82</stepIdentifier>
             <type>Wait</type>
         </botSteps>
         <developerName>Error_Handling</developerName>
@@ -45,10 +45,14 @@
     </conversationDefinitionPlanners>
     <conversationVariables>
         <dataType>Text</dataType>
+        <description>This variable may also be referred to as VerifiedCustomerId</description>
         <developerName>VerifiedCustomerId</developerName>
+        <includeInPrompt>false</includeInPrompt>
         <label>VerifiedCustomerId</label>
         <visibility>Internal</visibility>
     </conversationVariables>
+    <copilotPrimaryLanguage>en_US</copilotPrimaryLanguage>
+    <copilotSecondaryLanguages>all_languages</copilotSecondaryLanguages>
     <entryDialog>Welcome</entryDialog>
     <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
     <intentV3Enabled>false</intentV3Enabled>
@@ -56,5 +60,6 @@
     <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
     <role>You are a Digital Agent SDR for Siemens, reaching out to Prospects with a compelling message that is grounded in information that we have on the prospect. The purpose of the conversation is to schedule a meeting with one of our Sales Representatives.</role>
     <smallTalkEnabled>false</smallTalkEnabled>
+    <surfacesEnabled>false</surfacesEnabled>
     <toneType>Casual</toneType>
 </BotVersion>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Status</fullName>
-    <description>R19A:US-9882: Renamed one picklist value from &quot;Deal Registration Rejected&quot; to &quot;Partner Project Registration Rejected&quot;</description>
-    <trackFeedHistory>true</trackFeedHistory>
-    <trackHistory>true</trackHistory>
-    <type>Picklist</type>
-</CustomField>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+   <types>
+        <members>S4S_SDR_Permission</members>
+        <members>S4S_SDR_Agent</members>
+        <name>PermissionSet</name>
+    </types>
+
    <types>
       <members>S4S_Prompt_Binding__c</members>
       <members>Lead</members>
@@ -7,28 +14,30 @@
    </types>
    
    <types>
-      <members>S4S_SDR_Lead_QualifiedTest</members>
-      <members>S4S_SDR_Lead_Qualfied</members>
+      <members>S4S_Dynamic_Lead_Record_Page</members>
+      <name>Flexipage</name>
+   </types>
+
+   <types>
+      <members>S4S_SDR_Lead_StatusTest</members>
+      <members>S4S_SDR_Lead_Status</members>
       <members>S4S_SDR_Lead_Data_BinderTest</members>
       <members>S4S_SDR_Lead_Data_Binder</members>
       <name>ApexClass</name>
    </types>
       <types>
-      <members>Lead.Status</members>
+      <members>Lead.S4SSDR_Status__c</members>
+      <members>Lead.S4SSDR_Processed__c</members>
       <name>CustomField</name>
     </types>
-   <types>
-      <members>LeadStatus</members>
-      <name>StandardValueSet</name>
-    </types>
        <types>
+        <members>S4S_SDR_Agent</members>       
         <members>S4S_SDR_Lead_Data_Binder</members>
         <name>PermissionSet</name>
     </types>
        <types>
         <members>S4S_Prompt_Binding__c</members>
         <name>CustomTab</name>
-    </types>
-    
+    </types>  
    <version>63.0</version>
 </Package>

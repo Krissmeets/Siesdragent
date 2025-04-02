@@ -3,7 +3,7 @@
   "properties" : {
     "success" : {
       "title" : "success",
-      "description" : "A boolean value to indicate if the operation succeeded",
+      "description" : "boolean to indicate if the lead update operation was successful",
       "lightning:type" : "lightning__booleanType",
       "lightning:isPII" : false,
       "copilotAction:isDisplayable" : true,

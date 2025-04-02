@@ -1,5 +1,5 @@
 @isTest
-private class S4S_SDR_Lead_QualifiedTest {
+private class S4S_SDR_Lead_StatusTest {
     
     @TestSetup static void testData() {  
         system.debug('@testsetup');
@@ -9,7 +9,7 @@ private class S4S_SDR_Lead_QualifiedTest {
 @IsTest
     static void updateLeadStatus() {
 
-        User u = S4S_SDR_Lead_QualifiedTest.createUser();
+        User u = S4S_SDR_Lead_StatusTest.createUser();
 
         List<PermissionSet> lps = [SELECT Id FROM PermissionSet WHERE Name IN ('EinsteinSdrAgent', 'S4S_SDR_Agent')];
         List<PermissionSetAssignment> lpsa = new List<PermissionSetAssignment>();
@@ -29,9 +29,10 @@ private class S4S_SDR_Lead_QualifiedTest {
         RecordType leadRecordType = [select Id from RecordType where SobjectType = 'Lead' and DeveloperName = 'S4SInternal' limit 1];
         Lead l = new Lead (
             RecordTypeId = leadRecordType.Id,
+            S4SSDR_Processed__c = false,
             FirstName = 'John',
             S4SDivision__c  = 'IOT',
-            Status = 'SDR Unqualified',
+            Status = 'Open',
             Industry = 'Automotive',
             LastName = 'Doe' + String.valueOf(Math.random()).substring(2),             
             Company = 'Acme Corp',       
@@ -40,16 +41,27 @@ private class S4S_SDR_Lead_QualifiedTest {
             PostalCode = '90001',
             Country = 'DE',              
             Email = 'john.doe@example.com');
-        insert l;
+            insert l;
 
-        List<S4S_SDR_Lead_Qualfied.Request> requests = new List<S4S_SDR_Lead_Qualfied.Request>();
-        S4S_SDR_Lead_Qualfied.Request request = new S4S_SDR_Lead_Qualfied.Request();
-        Lead lead = [SELECT Id From Lead limit 1];
-        request.lead = lead;
-        requests.add(request);
+            List<S4S_SDR_Lead_Status.Request> requests = new List<S4S_SDR_Lead_Status.Request>();
+            S4S_SDR_Lead_Status.Request request = new S4S_SDR_Lead_Status.Request();
+            Lead lead = [SELECT Id From Lead limit 1];
+            
+            request.lead = lead;
+            request.status = 'Contacted';
+            requests.add(request);
 
-            List<S4S_SDR_Lead_Qualfied.Response> responses = S4S_SDR_Lead_Qualfied.sdrLeadQualfied(requests);
-            Assert.isTrue(responses[0].success,'Updated Lead Status');
+            List<S4S_SDR_Lead_Status.Response> responses1 = S4S_SDR_Lead_Status.updateLeadStatus(requests);
+            Assert.isTrue(responses1[0].success,'Updated Lead Status');
+            
+            requests.clear();
+            request.lead = lead;
+            request.status = 'Qualified';
+            requests.add(request);
+
+            List<S4S_SDR_Lead_Status.Response> responses2 = S4S_SDR_Lead_Status.updateLeadStatus(requests);
+            Assert.isTrue(responses2[0].success,'Updated Lead Status');
+
         }
         Test.stopTest();     
 

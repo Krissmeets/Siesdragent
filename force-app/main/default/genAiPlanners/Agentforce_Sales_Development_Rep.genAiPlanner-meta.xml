@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenAiPlanner xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<GenAiPlanner xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Prospect and generate pipeline 24/7 with an autonomous AI agent. Agentforce Sales Development Representative (SDR) intelligently engages leads with personalized content, answers common questions, and schedules meetings.</description>
     <genAiFunctions>
         <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
@@ -10,8 +10,11 @@
             <genAiFunctions>
                 <functionName>sales_sdr_agent__OptOutLead</functionName>
             </genAiFunctions>
+            <genAiFunctions>
+                <functionName>S4S_SDR_Lead_Status</functionName>
+            </genAiFunctions>
             <genAiPluginInstructions>
-                <description>If lead or prospect has requested to stop receiving messages, or to opt out, you must perform the Opt Out Lead action</description>
+                <description>If lead or prospect has requested to stop receiving messages, or to opt out, you must perform the Opt Out Lead action. And you MUST execute S4S_SDR_Lead_Status with input status set to REJECTED</description>
                 <developerName>instruction_ifleadorpr0</developerName>
                 <language>en_US</language>
                 <masterLabel>instruction_ifleadorpr0</masterLabel>
@@ -43,7 +46,7 @@
                 <functionName>sales_sdr_agent__ScheduleEmail</functionName>
             </genAiFunctions>
             <genAiFunctions>
-                <functionName>S4S_SDR_Lead_Qualfied</functionName>
+                <functionName>S4S_SDR_Lead_Status</functionName>
             </genAiFunctions>
             <genAiPluginInstructions>
                 <description>Always draft an email before scheduling an email. And you must always use the generated email for the schedule email input.</description>
@@ -99,9 +102,9 @@ Next, choose one and only one case from the 3 cases below. If you decide that a 
   Case 3: If neither Case 1 nor Case 2 applies.
 Do not change the case once it has been chosen.
 Finally, execute the instructions below strictly based on the case you have chosen. Do not mix instructions from multiple use cases together.
-  Instruction for case 1: draft an email using DraftGenericReplyEmail.
-  Instruction for case 2: draft an email using DraftMeetingRequestEmail. And you MUST execute S4S_SDR_Lead_Qualfied to update the lead status to &apos;SDR Qualified&apos;.
-  Instruction for case 3: draft an email using DraftGenericReplyEmail.</description>
+  Instruction for case 1: draft an email using DraftGenericReplyEmail. And you MUST execute S4S_SDR_Lead_Status with input status set to RESPONDED
+  Instruction for case 2: draft an email using DraftMeetingRequestEmail. And you MUST execute S4S_SDR_Lead_Status with input status set to QUALIFIED
+  Instruction for case 3: draft an email using DraftGenericReplyEmail. And you MUST execute S4S_SDR_Lead_Status with input status set to RESPONDED</description>
                 <developerName>instruction_firstsetem7</developerName>
                 <language>en_US</language>
                 <masterLabel>instruction_firstsetem7</masterLabel>
@@ -126,59 +129,63 @@ Finally, execute the instructions below strictly based on the case you have chos
             <genAiFunctions>
                 <functionName>sales_sdr_agent__ScheduleEmail</functionName>
             </genAiFunctions>
+            <genAiFunctions>
+                <functionName>S4S_SDR_Lead_Status</functionName>
+            </genAiFunctions>
             <genAiPluginInstructions>
                 <description>Always draft an email before scheduling an email. And you must always use the generated email for the schedule email input.</description>
                 <developerName>instruction_alwaysdraf0</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_alwaysdraf0</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
                 <description>You must always use context variables for the input of this action</description>
                 <developerName>instruction_youmustalw1</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_youmustalw1</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
                 <description>Do not draft or schedule more than one email.</description>
                 <developerName>instruction_donotdraft2</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_donotdraft2</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
                 <description>If the request is introduction, initial outreach email, draft an initial outreach email for user.</description>
                 <developerName>instruction_ifthereque3</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_ifthereque3</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
                 <description>If the request is revise, followup or nudge email, then use Draft a Nudge, followup or revise Email action.</description>
                 <developerName>instruction_ifthereque4</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_ifthereque4</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
-                <description>You must schedule the email after drafting an email.</description>
+                <description>You must schedule the email and execute the action S4S_SDR_Lead_Status after drafting an email.</description>
                 <developerName>instruction_youmustsch5</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_youmustsch5</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
-                <description>If Is_Agents_at_lastNudge value is set to TRUE or true, then and only then must you add &quot;Last nudge&quot; to additional instruction for prompt template.</description>
+                <description>IF Is_Agents_at_lastNudge value is set to TRUE or true, then and only then must you: add &quot;Last nudge&quot; to additional instruction for prompt template AND set the status input for action S4S_SDR_Lead_Status to LASTNUDGE
+IF Is_Agents_at_lastNudge value is set to FALSE or false, then and only then must you set the status input for action S4S_SDR_Lead_Status to CONTACTED</description>
                 <developerName>instruction_ifisagents6</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_ifisagents6</masterLabel>
             </genAiPluginInstructions>
             <genAiPluginInstructions>
                 <description>Only execute one function step at a time. This is VERY IMPORTANT. After each function, make sure to observe all the information you have before deciding on what the next step is.</description>
                 <developerName>instruction_onlyexecut7</developerName>
-                <language xsi:nil="true"/>
+                <language>en_US</language>
                 <masterLabel>instruction_onlyexecut7</masterLabel>
             </genAiPluginInstructions>
             <language>en_US</language>
             <masterLabel>Send Outreach</masterLabel>
             <name>SendOutreach</name>
             <pluginType>Topic</pluginType>
-            <scope>Your job is only to draft or revise emails and schedule those emails to be sent to prospects.</scope>
+            <scope>Your job is only to draft or revise emails, schedule those emails to be sent to prospects and update the status on the lead using action S4S_SDR_Lead_Status</scope>
         </genAiCustomizedPlugin>
         <genAiPluginName>sales_sdr_agent__SendOutreach</genAiPluginName>
     </genAiPlugins>
