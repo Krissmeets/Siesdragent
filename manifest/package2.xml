@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+
+   <types>
+      <members>HighVelocitySales</members>
+      <members>EAC</members>
+      <name>Settings</name>
+   </types>
+   <types>
+      <members>Agentforce_Sales_Development_Rep</members>
+      <name>GenAiPlanner</name>
+   </types>
+   <types>
+      <members>Agentforce_Sales_Development_Rep</members>      
+      <name>Bot</name>
+   </types>
+   <types>
+      <members>DraftNudgeEmail_Override</members>
+      <members>GenerateGenericFallbackReply_Override</members>
+      <members>GenerateInitialIntroEmail_Override</members>
+      <members>GenerateProductQnAEmail_Override</members>
+      <members>RespondToProspectInterest_Override</members>      
+      <name>GenAiPromptTemplate</name>
+   </types>
+          <types>
+      <members>S4S_SDR_Lead_Status</members>
+      <name>GenAiFunction</name>
+   </types>
+   <version>63.0</version>
+</Package>

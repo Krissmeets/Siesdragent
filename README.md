@@ -8,6 +8,9 @@ Includes:
 - Agent Modifications (Scope, Instructions, etc.)
 - Custom Agent Action (Connect to existing Lead Process)
 
+Development branch
+https://github.com/Krissmeets/Siesdragent/tree/development
+
 SDR Implementation guide:
 https://docs.google.com/presentation/d/1xqdXrVL2ojqyFS28gENEoftzPC3nwTC9dlsP67pxEpQ/edit#slide=id.g32b936b6bda_0_2697
 
@@ -16,4 +19,6 @@ https://docs.google.com/presentation/d/1Mhj9xm0o0clnvNkt5JC41pTOO6w_BB5FnhnnPdla
 
 Salesforce Metadata:
 force-app/main/default/
-manifest/package.xml
+manifest/package1.xml
+manifest/package2.xml
+data/bindings.csv

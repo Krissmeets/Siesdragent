@@ -1,0 +1,24 @@
+{
+  "required" : [ "lead", "status" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "lead" : {
+      "title" : "lead",
+      "description" : "Lead Object",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Lead"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "status" : {
+      "title" : "status",
+      "description" : "A string value that can be set to QUALIFIED or LASTNUDGE or CONTACTED or RESPONDED or REJECTED",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
